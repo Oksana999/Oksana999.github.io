@@ -3,6 +3,8 @@
 <html>
   <head>
     <title>My Project</title>
+
+    <script src="js/test.js"></script>
   </head>
 
   <body>
@@ -56,16 +58,28 @@
       </article>
 
       <h2 id="test">Test</h2>
-      <form>
+      <form id="test_questions">
         <div>
-          <label>What does class mean in Java?</label><br>
-          <input type="radio" id="answer1" name="answer" value="It is a template for create an object">
-          <label for="answer1">It is a template for create an object</label>
+          <label>What does class mean in Java?</label>
           <br>
-          <input type="radio" id="answer2" name="answer" value="It is a block of code">
+          <input type="radio" id="answer12" name="answer" value="It is a template for create an object">
+          <label for="answer12">It is a template for create an object</label>
+          <br>
+          <input type="radio" id="answer2" name="answer"  value="It is a block of code">
           <label for="answer2">It is a block of code</label>
         </div>
+        <div>
+          <label>What is static method in Java?</label>
+          <br>
+          <input type="radio" id="answer3" name="answer1" value="It is a method that belongs to the class">
+          <label for="answer3">It is a method that belongs to the class</label>
+          <br>
+          <input type="radio" id="answer4" name="answer1"  value="It is constant method">
+          <label for="answer4">It is constant method</label>
+        </div>
+        <button type="button" onclick="checkTest()">Submit</button>
       </form>
+      <div id="score"></div>
     </main>
   <footer>
 
