@@ -1,3 +1,10 @@
 # Default ignored files
 /workspace.xml
 ../.idea
+/compiler.xml
+/encodings.xml
+/html-me-thomething.iml
+/misc.xml
+/modules.xml
+/vcs.xml
+/codeStyles/
