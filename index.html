@@ -3,20 +3,35 @@
 <html>
   <head>
     <title>My Project</title>
-
+    <link href="./style.css" type="text/css" rel="stylesheet">
     <script src="js/test.js"></script>
   </head>
 
   <body>
     <header>
-      <ul>
-        <li><a href="#tutorial">Tutorial</a></li>
-        <li><a href="#test">Test</a></li>
-      </ul>
+
+      <!-- our main logo -->
+      <div class="head">
+        <a id="logo" href="index.html">
+          <img src="imgs/logo1.png" alt="Logo" width="35%">
+          <span>HTML Me Something</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#test">Test</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1 id="tutorial" class = "center">Welcome to the Programming School</h1>
+
     </header>
     <main>
-      <h1 id="tutorial">Our Programming School</h1>
-      <img src="./imgs/main.jpg" alt="Me" width="50%"/>
+
+      <div class="center">
+      <img  src="./imgs/photo4.jpg" alt="Me" width="55%" height="45%"/>
+        <br>
       <p>Dear readers, these Java Interview Questions have been
         designed especially to get you acquainted with the nature
         of questions you may encounter during your interview for
@@ -24,64 +39,118 @@
         good interviewers hardly planned to ask any particular question
         during your interview, normally questions start with some basic
         concept of the subject and later they continue based on further
-        discussion and what you answer &#95;</p>
+        discussion and what you answer.</p>
+
         <article>
           <h3>
             What do you know about Java?
           </h3>
+          <img src="./imgs/school.jpg." alt="Java"  width="45%"/>
           <p>
             Java is a high-level programming language originally developed by
             Sun Microsystems and released in 1995.
             Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
           </p>
-          <img src=""/>
+
         </article>
         <article>
           <h3>
             What are the supported platforms by Java Programming Language?
           </h3>
+          <img src="./imgs/java1.jpg"/>
           <p>
             Java runs on a variety of platforms, such as Windows, Mac OS,
             and the various versions of UNIX/Linux like HP-Unix,
             Sun Solaris, Redhat Linux, Ubuntu, CentOS, etc.
           </p>
-          <img src="">
+          <img src="./imgs/photo9.jpg" width="45%">
         </article>
       <article>
         <h3>
-          List any five features of Java?
+          Classes and Objects in Java.
+        </h3>
+        <lu>
+          <li>
+            <b>Object</b> &#8209; Objects have states and behaviors. Example: A dog has states - color, name,
+            breed as well as behaviors – wagging the tail, barking, eating. An object is an instance
+            of a class.
+          </li>
+          <li>
+            <b>Class</b> &#8209; A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.
+          </li>
+
+        </lu>
+        <br>
+        <img src="./imgs/1195.jpg" width="45%"/>
+      </article>
+      <article>
+        <h3>
+          Java Constructors
         </h3>
         <p>
-          Some features include Object Oriented, Platform Independent, Robust, Interpreted, Multi-threaded
+          A constructor initializes an object when it is created. It has the same name as
+          its class and is syntactically similar to a method. However, constructors have
+          no explicit return type.
         </p>
-        <img src="">
+        <img src="./imgs/photo17.jpg" width="45%" height="35%">
       </article>
+      </div>
 
-      <h2 id="test">Test</h2>
-      <form id="test_questions">
-        <div>
-          <label>What does class mean in Java?</label>
-          <br>
-          <input type="radio" id="answer12" name="answer" value="It is a template for create an object">
-          <label for="answer12">It is a template for create an object</label>
-          <br>
-          <input type="radio" id="answer2" name="answer"  value="It is a block of code">
-          <label for="answer2">It is a block of code</label>
-        </div>
-        <div>
-          <label>What is static method in Java?</label>
-          <br>
-          <input type="radio" id="answer3" name="answer1" value="It is a method that belongs to the class">
-          <label for="answer3">It is a method that belongs to the class</label>
-          <br>
-          <input type="radio" id="answer4" name="answer1"  value="It is constant method">
-          <label for="answer4">It is constant method</label>
-        </div>
-        <button type="button" onclick="checkTest()">Submit</button>
-      </form>
-      <div id="score"></div>
     </main>
   <footer>
+    <h2 id="test">Test</h2>
+    <div class="test">
+    <form id="test_questions">
+      <div>
+        <label class="question">What does class mean in Java?</label>
+        <br>
+        <input type="radio" id="1" name="answer" value="It is a template for create an object">
+        <label for="1">It is a template for create an object</label>
+        <br>
+        <input type="radio" id="2" name="answer"  value="It is a block of code">
+        <label for="2">It is a block of code</label>
+      </div>
+      <div>
+        <label class="question">What is static method in Java?</label>
+        <br>
+        <input type="radio" id="3" name="answer1" value="It is a method that belongs to the class">
+        <label for="3">It is a method that belongs to the class</label>
+        <br>
+        <input type="radio" id="4" name="answer1"  value="It is constant method">
+        <label for="4">It is constant method</label>
+      </div>
+      <div>
+        <label class="question">What is constructor in Java?</label>
+        <br>
+        <input type="radio" id="5" name="answer_2" value="A constructor initializes an object when it is created">
+        <label for="5">A constructor initializes an object when it is created</label>
+        <br>
+        <input type="radio" id="6" name="answer_2"  value="It is a programmer">
+        <label for="6">It is a programmer</label>
+      </div>
+      <br>
+
+      <button class="confirm__button" type="button" onclick="checkTest()">Submit</button>
+    </form>
+    </div>
+<!--    <div id="score"></div>-->
+    <br>
+
+      <div id="center1">
+        <div class="cert">
+          <div class="seal-img"></div>
+          <span style="font-size:25px; font-weight:bold">Certificate of Java Training</span><br/><br/>
+
+          <div class="score" id="score"></div>
+
+
+        </div>
+      </div>
+
+<!--    <div class="img-bottom-right">-->
+<!--      <img src="./imgs/sertificat.jpg" alt="certificate" width="25%"/>-->
+<!--    </div>-->
+
 
   </footer>
   </body>
