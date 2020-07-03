@@ -169,6 +169,9 @@ label {
 .score {
     font-size: 20px;
 }
+img{
+    border-radius: 7%;
+}
 
 main{
     width: 65%;
